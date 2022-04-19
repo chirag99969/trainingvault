@@ -1,9 +1,4 @@
-# Vault for Local Development
 
-This is a docker compose setup for development work using Vault and Consul.
-
-* FORKED from:
-    * https://github.com/tolitius/cault
 
 ## Start Consul and Vault
 
@@ -384,28 +379,5 @@ $ curl -s -H "X-Vault-Token: $token" -X GET $VAULT_ADDR/v1/cubbyhole/response
 
 Vault takes `one time` pretty seriously.
 
-## Troubleshooting
 
-### Bad Image Caches
 
-In case there are some stale / stopped cached images, you might get connection exceptions:
-
-```clojure
-failed to check for initialization: Get v1/kv/vault/core/keyring: dial tcp i/o timeout
-```
-
-```clojure
-reconcile unable to talk with Consul backend: error=service registration failed: /v1/agent/service/register
-```
-
-you can purge stopped images to solve that:
-
-```bash
-docker rm $(docker ps -a -q)
-```
-
-## License
-
-Copyright © 2019 tolitius
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
