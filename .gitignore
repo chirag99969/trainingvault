@@ -1,0 +1,9 @@
+.DS_Store
+.vscode
+*.snap
+*.csr
+*.srl
+ca.key
+private*
+*.log
+*.png
