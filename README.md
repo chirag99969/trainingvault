@@ -52,7 +52,7 @@ Vault is configured to use a `consul` [secret backend](https://www.vaultproject.
 
 ---
 
-- [Vault for Local Development](#vault-for-local-development)
+
   - [Start Consul and Vault](#start-consul-and-vault)
   - [Getting Vault Ready](#getting-vault-ready)
     - [Bootstrap](#bootstrap)
@@ -72,9 +72,7 @@ Vault is configured to use a `consul` [secret backend](https://www.vaultproject.
     - [Response Wrapping](#response-wrapping)
       - [System backend](#system-backend)
       - [Cubbyhole backend](#cubbyhole-backend)
-  - [Troubleshooting](#troubleshooting)
-    - [Bad Image Caches](#bad-image-caches)
-  - [License](#license)
+  
 
 ## Start Consul and Vault
 
